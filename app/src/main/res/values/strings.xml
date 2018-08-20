@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Who Wants to be Ethical</string>
+    <string name="title_welcome">Rerangka Pengambilan Keputusan Etis</string>
+    <string name="cont">Continue</string>
+
+    <string name="welcome_1">Dalam proses pengambilan keputusan, sering kali kita dihadapkan pada dilema etis yaitu masalah pengambilan keputusan diantara dua kemungkinan tuntutan moral. Dilema etis muncul karena tidak adanya pilihan yang seluruhnya benar.</string>
+    <string name="welcome_2">Misalnya seseorang dihadapkan pada dilema etis: melakukan kecurangan pelaporan keuangan sesuai keinginan pimpinan perusahaan atau kehilangan pekerjaan karena menolak kemauan pimpinan.</string>
+    <string name="welcome_3">Aplikasi ini bertujuan untuk memberikan panduan dalam pengambilan keputusan etis berdasarkan teori/pendekatan etika.</string>
+    <string name="welcome_4">Ketika Anda dihadapkan dilema etis,Gunakan Teori/pendekatan etika  untuk memberikan panduan dalam pengambilan keputusan etis</string>
+    <string name="next">Lanjut</string>
+    <string name="prev">Kembali</string>
+    <string name="soal1">1. Apakah  masalah yang Anda hadapi? (1/5)</string>
+    <string name="soal2">2. Tindakan apa yang Anda usulkan untuk mengatasi masalah tersebut? (2/5)</string>
+    <string name="soal3">3. Siapa saja pihak  yang akan terkena dampak dari keputusan tersebut ? (3/5)</string>
+    <string name="soal4">4. Coba buat peringkat pihak yang terkena dampak keputusan berdasarkan urutan seberapa penting mereka harus diprioritaskan. (4/5)</string>
+    <string name="title_welcome_dua">Bertindak etis itu hebat dan membawa kebaikan.</string>
+    <string name="title_welcome_tiga">Berpikirlah rasional dan gunakan hati nurani.</string>
+
+</resources>
