@@ -18,6 +18,8 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.DrawableImageViewTarget;
 
 import io.github.fuadreza.whowantstobeethical.R;
+import io.github.fuadreza.whowantstobeethical.data.DataSkor;
+import io.github.fuadreza.whowantstobeethical.data.Skor;
 
 /**
  * Dibuat dengan kerjakerasbagaiquda oleh Shifu pada tanggal 17/08/2018.
@@ -29,11 +31,14 @@ public class Question2Fragment extends Fragment implements View.OnClickListener{
     private EditText etJawaban;
     private Question3Fragment mQuestionFragment;
 
+    private DataSkor ds;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_soal_dua, container, false);
+        ds = Skor.ds;
         btnNext = view.findViewById(R.id.btn_next);
         btnNext.setOnClickListener(this);
 
@@ -43,7 +48,7 @@ public class Question2Fragment extends Fragment implements View.OnClickListener{
         //Edit gambar
         ImageView iv1 = view.findViewById(R.id.iv_gbr1);
         DrawableImageViewTarget imageViewTarget = new DrawableImageViewTarget(iv1);
-        Glide.with(this).load(R.raw.thinking).into(imageViewTarget);
+        Glide.with(this).load(R.raw.thinking_bulb).into(imageViewTarget);
 
         //Edit Soal
         tvSoal = view.findViewById(R.id.tv_soal);
@@ -61,6 +66,9 @@ public class Question2Fragment extends Fragment implements View.OnClickListener{
             if(mQuestionFragment==null){
                 mQuestionFragment = new Question3Fragment();
             }
+
+            ds.setSoal2(etJawaban.getText().toString());
+
             FragmentManager mFragmentManager = getFragmentManager();
             FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
             mFragmentTransaction.replace(R.id.layout_starter, mQuestionFragment, Question3Fragment.class.getSimpleName());

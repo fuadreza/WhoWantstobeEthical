@@ -36,10 +36,10 @@ public class Intro2Fragment extends Fragment implements View.OnClickListener {
         ImageView iv2 = view.findViewById(R.id.iv_gbr2);
 
         DrawableImageViewTarget imageViewTarget = new DrawableImageViewTarget(iv1);
-        Glide.with(this).load(R.raw.thinking).into(imageViewTarget);
+        Glide.with(this).load(R.raw.superman).into(imageViewTarget);
 
         imageViewTarget = new DrawableImageViewTarget(iv2);
-        Glide.with(this).load(R.raw.diagram).into(imageViewTarget);
+        Glide.with(this).load(R.raw.angel_and_devil_jadi).into(imageViewTarget);
 
         return view;
     }

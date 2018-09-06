@@ -18,7 +18,7 @@
             <ImageView
                 android:id="@+id/iv_gbr1"
                 android:layout_width="match_parent"
-                android:layout_height="353dp" />
+                android:layout_height="280dp" />
 
             <TextView
                 android:id="@+id/tv_soal"
@@ -27,7 +27,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginBottom="5dp"
                 android:text="@string/title_welcome"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <android.support.design.widget.TextInputLayout

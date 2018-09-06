@@ -19,7 +19,7 @@
             <ImageView
                 android:id="@+id/iv_gbr1"
                 android:layout_width="match_parent"
-                android:layout_height="300dp" />
+                android:layout_height="280dp" />
 
             <TextView
                 android:id="@+id/tv_soal"
@@ -28,7 +28,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginBottom="5dp"
                 android:text="@string/title_welcome"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <android.support.design.widget.TextInputLayout
@@ -40,8 +40,9 @@
                     android:id="@+id/input_jawaban_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Ururtan 1"
+                    android:hint="Urutan 1"
                     android:imeOptions="actionDone"
+                    android:textSize="16sp"
                     android:maxLines="1" />
             </android.support.design.widget.TextInputLayout>
 
@@ -54,8 +55,9 @@
                     android:id="@+id/input_jawaban_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Ururtan 2"
+                    android:hint="Urutan 2"
                     android:imeOptions="actionDone"
+                    android:textSize="16sp"
                     android:maxLines="1" />
             </android.support.design.widget.TextInputLayout>
 
@@ -68,8 +70,9 @@
                     android:id="@+id/input_jawaban_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Ururtan 3"
+                    android:hint="Urutan 3"
                     android:imeOptions="actionDone"
+                    android:textSize="16sp"
                     android:maxLines="1" />
             </android.support.design.widget.TextInputLayout>
 
@@ -82,8 +85,9 @@
                     android:id="@+id/input_jawaban_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Ururtan 4"
+                    android:hint="Urutan 4"
                     android:imeOptions="actionDone"
+                    android:textSize="16sp"
                     android:maxLines="1" />
             </android.support.design.widget.TextInputLayout>
         </LinearLayout>

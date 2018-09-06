@@ -6,10 +6,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.widget.ImageView;
-
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.target.DrawableImageViewTarget;
 
 import io.github.fuadreza.whowantstobeethical.R;
 
@@ -25,7 +21,7 @@ public class WelcomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_welcome);
 
         // Toolbar title dan back button
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbare);
+        Toolbar toolbar = findViewById(R.id.toolbare);
         toolbar.setTitle("Before we get started");
         setSupportActionBar(toolbar);
 
@@ -36,4 +32,5 @@ public class WelcomeActivity extends AppCompatActivity {
 
         mFragmentTransaction.commit();
     }
+
 }

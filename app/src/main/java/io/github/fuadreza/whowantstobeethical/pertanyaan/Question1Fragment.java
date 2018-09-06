@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,6 +18,8 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.DrawableImageViewTarget;
 
 import io.github.fuadreza.whowantstobeethical.R;
+import io.github.fuadreza.whowantstobeethical.data.DataSkor;
+import io.github.fuadreza.whowantstobeethical.data.Skor;
 
 /**
  * Dibuat dengan kerjakerasbagaiquda oleh Shifu pada tanggal 17/08/2018.
@@ -26,6 +29,9 @@ public class Question1Fragment extends Fragment implements View.OnClickListener{
     private Question2Fragment mQuestionFragment;
     private Button btnNext;
     private TextView tvSoal;
+    private EditText etJawaban;
+
+    private DataSkor ds;
 
     @Nullable
     @Override
@@ -33,17 +39,19 @@ public class Question1Fragment extends Fragment implements View.OnClickListener{
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_soal_satu, container, false);
+        ds = Skor.ds;
         btnNext = view.findViewById(R.id.btn_next);
         btnNext.setOnClickListener(this);
 
         //Edit gambar
         ImageView iv1 = view.findViewById(R.id.iv_gbr1);
         DrawableImageViewTarget imageViewTarget = new DrawableImageViewTarget(iv1);
-        Glide.with(this).load(R.raw.thinking).into(imageViewTarget);
+        Glide.with(this).load(R.raw.thinking_bulb).into(imageViewTarget);
 
         //Edit Soal
         tvSoal = view.findViewById(R.id.tv_soal);
         tvSoal.setText(R.string.soal1);
+        etJawaban = view.findViewById(R.id.et_jawaban);
 
         return view;
 
@@ -56,6 +64,9 @@ public class Question1Fragment extends Fragment implements View.OnClickListener{
             if(mQuestionFragment==null){
                 mQuestionFragment = new Question2Fragment();
             }
+
+            ds.setSoal1(etJawaban.getText().toString());
+
             FragmentManager mFragmentManager = getFragmentManager();
             FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
             mFragmentTransaction.replace(R.id.layout_starter, mQuestionFragment, Question2Fragment.class.getSimpleName());
